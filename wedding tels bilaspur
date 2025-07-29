@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Tales | Bilaspur</title>
+  <style>
+    :root {
+      --primary: #ce3c6f;
+      --secondary: #99835bfd;
+      --bg: #b9c08b;
+      --text: #000000;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), #6a0572);
+      color: rgb(30, 100, 97);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    nav {
+      background: var(--secondary);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #1f1212;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: var(--primary);
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1587574293340-ec07294fe524?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(201, 201, 203);
+      text-shadow: 2px 2px 10px #000;
+      text-align: center;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      animation: fadeInDown 2s ease;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-top: 2rem;
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+      font-size: 2rem;
+      text-align: center;
+    }
+    section p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.8;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .contact-info a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      background: var(--primary);
+      color: rgb(43, 182, 164);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--secondary);
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wedding Tales | Bilaspur</h1>
+    <p>Capturing your forever moments with elegance & soul</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Your Love Story, Beautifully Framed 💍</h1>
+  </div>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Us</h2>
+      <p>With over 2 years of experience in wedding photography, Wedding Tales | Bilaspur is your trusted partner for capturing candid, traditional, and cinematic love stories. We turn your once-in-a-lifetime moments into timeless visuals.</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Coming soon – A curated collection of our best wedding memories, crafted with love and light.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services & Packages</h2>
+      <p>This section is being updated with exclusive offerings tailored to your wedding needs. Stay tuned!</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p><strong>📞 Phone:</strong> <a href="tel:9111100329">9111100329</a></p>
+        <p><strong>📧 Email:</strong> <a href="mailto:nipeshmathur221@gmail.com">nipeshmathur221@gmail.com</a></p>
+        <p><strong>📸 Instagram:</strong> <a href="#">@yourhandlehere</a></p>
+      </div>
+    </section>
+  </div>
+
+  <button class="scroll-top" onclick="scrollToTop()">↑ Top</button>
+
+  <footer>
+    <p>&copy; 2025 Wedding Tales | Bilaspur. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Scroll to top button
+    const scrollBtn = document.querySelector('.scroll-top');
+    window.onscroll = () => {
+      if (window.scrollY > 300) {
+        scrollBtn.style.display = 'block';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Tales | Bilaspur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fffaf0;
+      color: #2c2c2c;
+    }
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1549921296-3a5a5f6e13f4?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 4rem;
+      font-family: 'Playfair Display', serif;
+      background: rgba(191, 166, 122, 0.8);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    nav {
+      background-color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin: 0 1.5rem;
+      color: #bfa67a;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      color: #8c734b;
+    }
+    .about p, .services p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery img, .gallery video {
+      width: 100%;
+      border-radius: 12px;
+      height: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .testimonial {
+      background-color: #fef6e4;
+      padding: 3rem 1rem;
+      font-style: italic;
+      color: #6d4c41;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      color: #bfa67a;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+    }
+    #whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 24px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://wa.me/919111100329" id="whatsapp" target="_blank">💬</a>
+  <header>
+    <h1>Wedding Tales | Bilaspur</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section about">
+    <h2>About Us</h2>
+    <p>We are a premium wedding photography team based in Bilaspur, capturing timeless stories with elegance and emotion. From cinematic moments to raw emotions, we aim to deliver memories that last a lifetime.</p>
+  </section>
+
+  <section id="services" class="section services">
+    <h2>Our Services</h2>
+    <p>We provide all types of wedding photography, videography, wedding cards, video cards, pre-wedding shoots, photo editing, and premium albums — tailored uniquely for each couple.</p>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <video src="https://cdn.pixabay.com/vimeo/791330770/wedding-142027.mp4?width=640&hash=365627c1d9f18867b1d3e6b6ab635cb7a230a683" controls></video>
+      <img src="https://images.unsplash.com/photo-1621786030484-869ccf6d2d7e?auto=format&fit=crop&w=800&q=80" alt="Bride portrait">
+      <img src="https://images.unsplash.com/photo-1617634667039-80c4c8c2638b?auto=format&fit=crop&w=800&q=80" alt="Couple Shot">
+      <video src="https://cdn.pixabay.com/vimeo/877366400/wedding-18772.mp4?width=640&hash=32e0bcd437cc331ef3db5246c5be35f979b3e5aa" controls></video>
+    </div>
+  </section>
+
+  <section class="section testimonial">
+    <h2>Client Testimonials</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">“Their storytelling is magical — we relive every moment through the pictures.” – Priya & Mohit</p>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Let's Connect</h2>
+    <p>Instagram: <a href="https://instagram.com/loveframestudio_26" target="_blank">@loveframestudio_26</a></p>
+    <p>Email us: <a href="mailto:nipeshmathur221@gmail.com">nipeshmathur221@gmail.com</a></p>
+    <p>Call us: <a href="tel:+919111100329">+91 9111100329</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Wedding Tales | Bilaspur. All rights reserved.</p>
+  </footer>
+</body>
+</html>
